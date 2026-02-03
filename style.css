@@ -1,0 +1,829 @@
+/* Resetting default spacing and applying box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background color */
+body{
+    
+}
+
+/* Header main container */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  background-color: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(20px);
+
+ /* Keeps navbar above page content */
+}
+
+/* Header items alignment and spacing */
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    /* remove position: sticky and top: 0 here */
+}
+
+
+/* Navbar links basic styling */
+.home,.about,.services,.intern{
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+
+/* Home link spacing */
+.home{
+    position: relative;
+    right: 50px;
+}
+
+/* Navigation box (Home) */
+.home-dev {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+/* Hover effect for Home box */
+.home-dev:hover {
+    background-color: #8fbfe1;
+    border-radius: 5px;
+}
+
+/* About link spacing */
+.about {
+    position: relative;
+    right: 50px;
+}
+
+/* About box */
+.about-dev {
+    height: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+/* About hover */
+.about-dev:hover {
+   background-color: #8fbfe1;
+    border-radius: 5px;
+}
+
+/* Services link position */
+.services{
+    position: relative;
+    right: 50px;
+}
+
+/* Services box */
+.services-dev{
+    height: 40px;
+    width: 100px;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Services hover */
+.services-dev:hover {
+   background-color: #8fbfe1;
+    border-radius: 5px;
+}
+
+/* Internship link position */
+.intern{
+    position: relative;
+    right: 50px;
+}
+
+/* Internship box */
+.internship-dev{
+    height: 40px;
+    width: 100px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+/* Internship hover */
+.internship-dev:hover {
+   background-color: #8fbfe1;
+    border-radius: 5px;
+}
+
+/* Company logo in header */
+.cognify-logo {
+    height: 60px;
+    max-width: 100%;
+}
+
+/* Navigation items grouping */
+.items {
+    display: flex;
+    gap: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-wrap: wrap;
+}
+
+/* Apply Now button */
+.apply-button {
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 100px;
+    width: 300px;
+
+    /* Gradient background animation */
+    background: linear-gradient(
+        45deg,
+        rgb(64, 64, 227),
+        rgb(245, 88, 114),
+        rgb(64, 64, 227)
+    );
+    background-size: 200% 200%;
+    transition: background-position 1s ease;
+}
+
+/* Apply button hover effect */
+.apply-button:hover {
+    background-position: right center;
+}
+
+/* Apply text inside the button */
+.apply-button-font{
+    padding-right:20px;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+/* Hero background image */
+.body-items{
+    background-image: url(cognifybackground10.jpg); 
+    background-size: cover;
+    width: auto;
+    height: 600px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Main heading 1 animation */
+.main-heading1{
+    font-size: 90px;
+    color: #ffff;
+    animation: mainheading1 1s ease-out forwards;
+}
+
+@keyframes mainheading1{
+    from{
+        transform: translatey(-200px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+}
+
+/* Main heading 2 animation */
+.main-heading2{
+    font-size: 90px;
+    color: #ffff;
+    margin-top: 10pxpx;
+    animation: mainheading2 1s ease-out forwards;
+}
+
+@keyframes mainheading2{
+    from{
+        transform: translatey(-300px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+}
+
+/* Main heading 3 animation */
+.main-heading3{
+    font-size: 90px;
+    color: #ffff;
+    margin-top: 20px;
+    animation: mainheading3 1s ease-out forwards;
+}
+
+@keyframes mainheading3{
+    from{
+        transform: translatey(-400px);
+    }
+    to{
+        transform: translatey(0px);
+    }   
+}
+
+/* Explore More button */
+.explor-more{
+    height: 50px;
+    width: 200px;
+    background-color: #1783d6;
+    align-items: center;
+    position: relative;
+    left: 650px;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 20px 0px 20px 0px;
+    animation: explore 1s ease-out forwards;
+}
+
+.explore-button{
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-weight: 500;
+}
+
+
+/* Internship details section container */
+.about-internship{
+    height: 1000px;
+    background-color: #ffff;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Internship big illustration */
+.aboutinternship-photo{
+    position: relative;
+    top: 80px;
+    left: 900px;
+    height: 600px;
+    width: 600px;
+}
+
+/* Internship text block */
+.text-area{
+    position: relative;
+    top: -600px;
+    padding-left: 45px;
+}
+
+/* Internship heading */
+.heading-about-internship{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+/* First detail heading */
+.about-internship-heading1{
+    padding-bottom: 25px;
+    padding-left: 70px;
+    font-size: 25px;
+    color: #604d4d;
+}
+
+/* Detail line text */
+.caption-of-heading1{
+    padding-left: 70px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #807777;
+}
+
+/* Icons beside internship rules */
+.original-policy-img{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+
+/* More headings */
+.about-internship-heading2{
+    padding-left: 70px;
+    font-size: 25px;
+    color: #604d4d;
+    padding-bottom: 25px;
+   
+}
+.zipfileimg{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+.caption-of-heading2{
+    padding-left: 70px;
+    font-weight: 500;
+    font-size: 19px;
+   
+    color: #807777;
+}
+.mailimg{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+.about-internship-heading3{
+    padding-bottom: 20px;
+    padding-left: 70px;
+    font-size: 25px;
+    color: #604d4d;
+}
+.caption-of-heading3{
+    padding-left: 70px;
+    font-weight: 500;
+    font-size: 19px;
+   
+    color: #807777;
+}
+.stipendtextimg{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+.about-internship-heading4{
+    padding-bottom: 20px;
+    padding-left: 70px;
+    font-size: 25px;
+    color: #604d4d;
+}
+.certificateinaboutsection{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+.qualifications{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 90px;
+}
+.caption-of-heading4{
+    padding-left: 70px;
+    font-weight: 500;
+   
+    font-size: 19px;
+    color: #807777;
+}
+
+/* Work process section */
+.why-u-choose{
+    height: 300px;
+    width: 100%;
+    background-image: url("workprocessbackround1.jpg");
+    background-size: cover;
+    
+    position: relative;
+}
+
+/* Work process heading */
+.why-u-choose-heading{
+    color: #ffff;
+    text-align: center;
+    padding-top: 70px
+}
+
+/* Work process cards */
+.cards-2{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50px;
+}
+.benifits{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    background-color: #ffff;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    margin-right: 10px;
+    margin-left: 100px;
+    transition-property: all;
+    transition-duration: 0.75s;  
+}
+.benifits:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+}
+.benifits-photo{
+    height: 80px;
+    width: 80px;
+}
+.benifits-heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.text1{
+    color: #807777;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.Real-World{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 30px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.Real-World:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+}
+.Real-World-photo{
+    height: 80px;
+    width: 80px;
+}
+.Real-World-heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.Real-World-text{
+    color: #807777;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.Mentorship{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 30px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.Mentorship:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+}
+.Mentorship-photo{
+    height: 80px;
+    width: 80px;
+}
+.Mentorship-heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.Mentorship-text{
+    color: #807777;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.stipend{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 30px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+.stipend:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-10px);
+}
+.stipend-photo{
+    height: 80px;
+    width: 80px;
+}
+.stipend-heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.stipend-text{
+    color: #807777;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+/* CONTACT US SECTION */
+.contact-us{
+    width: 100%;
+    height: 650px;
+    background-color: #ffff;
+    padding-top: 20px;
+}
+.contact-us-heading{
+    padding-top:  100px;
+    padding-left: 70px;
+    font-size: 23px;
+    color: #1783d6;
+}
+.Connect-heading{
+    padding-left: 70px;
+    padding-top: 10px;
+    font-size: 39px;
+    font-weight: 600px;
+}
+.text-in-contact{
+    padding-left: 70px;
+    padding-top: 30px;
+    font-size: 19px;
+    color: #807777;
+    padding-bottom: 10px;
+}
+.text-in-contact-line2{
+    padding-left: 70px;
+    font-size: 19px;
+    color: #807777;
+}
+.call-us{
+    padding-left: 70px;
+    padding-top: 50px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+.call-us-text{
+    font-size: 19px;
+    color: #807777;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.icon-dev{
+    height: 50px;
+    width: 50px;
+    background-color: #c8e7ff;
+    border-radius: 50%;
+    margin-left: 90px;
+    cursor: pointer; 
+}
+
+#call-us-icon{
+    padding-top: 15px;
+    color: #1783d6;
+    align-items: center;
+    text-align: center;
+}
+.chat-with-us{
+    padding-left:70px;
+    margin-left: 300px;
+    padding-top: 50px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: -200px;
+}
+.chat-with-us-icon-dev{
+    height: 50px;
+    width: 50px;
+    background-color: #c8e7ff;
+    border-radius: 50%;
+    margin-left: 90px;
+    cursor: pointer;
+}
+#chat-icon{
+    padding-top: 15px;
+    color: #1783d6;
+    align-items: center;
+    text-align: center;
+}
+
+.chat-us-text1{
+    font-size: 19px;
+    color: #807777;
+    padding-top: 20px;
+}
+.chat-us-text2{
+    font-size: 19px;
+    padding-top: 5px;
+    color: #635757;
+}
+.number{
+    color: #1783d6;
+    font-weight: 600;
+}
+.chat{
+    color: #1783d6;
+    padding-top: 2px;
+    font-weight: 600;
+}
+
+/* Contact form box */
+.contact-form{
+    background-color: #ffff;
+    height: 695px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 451px;
+    position: relative;
+    z-index: 5;
+    margin-left: 980px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    top: -550px;
+    padding: 50px;
+}
+.from-heading{
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+.name{
+    color:#635757 ;
+    padding-bottom: 10px;
+}
+.name-box{
+    padding: 18px;
+    width: 330px;
+    border-radius: 10px;
+    border: #635757,solid;
+    border-width: 1.5px;
+    color: #635757;
+}
+.mail{
+    color:#635757 ;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.email-box{
+    padding: 18px;
+    width: 330px;
+    border-radius: 10px;
+    border: #635757,solid;
+    border-width: 1.5px;
+    color: #635757;
+}
+.phone{
+    color:#635757 ;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.number-box{
+    padding: 18px;
+    width: 330px;
+    border-radius: 10px;
+    border: #635757,solid;
+    border-width: 1.5px;
+    color: #635757;
+}
+.message{
+    color:#635757 ;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.message-box{
+    padding: 40px;
+    width: 330px;
+    border-radius: 10px;
+    border: #635757,solid;
+    border-width: 1.5px;
+    color: #635757;
+}
+.submit-button {
+    height: 50px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 15px;
+    border-radius: 12px;
+    border: 1.5px solid #635757;
+    background-color: #1783d6;
+    transition: all 0.3s ease-in-out;
+}
+.submit-button:hover {
+    background-color: #1500ff;
+}
+
+/* Footer main container */
+.footer{
+    background-color: #0f172a;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+}
+.footer-container{
+    position: relative;
+    top: 130px;
+}
+.cognify-footer-logo{
+    height: 100px;
+    color: #ffff;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+.under-logo{
+    color: #fef9f9;
+    margin-left: 200px;
+}
+
+/* Footer links section */
+.section1{
+    color: #fef9f9;
+    height: 00px;
+}
+.sections-heading{
+    margin-left: 650px;
+    color: #fef9f9;
+    position: relative;
+    top: -200px;
+}
+.section-texts{
+    margin-left: 650px ;
+    position: relative;
+    top: -150px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition: ease-in;
+}
+.section-texts:hover{
+    color: #1500ff;
+}
+.section-texts1{
+    margin-left: 800px ;
+    position: relative;
+    top: -350px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition: ease-in;
+}
+.section-texts1:hover{
+    color: #1500ff;
+}
+.sections-heading1{
+    margin-left: 1100px;
+    color: #fef9f9;
+    position: relative;
+    top: -640px;
+    cursor: pointer;
+}
+.section-texts2{
+    margin-left: 1100px ;
+    position: relative;
+    top: -600px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition: ease-in;
+}
+.section-texts2:hover{
+    color: #1500ff;
+}
+
+/* Bottom bar footer */
+.under-footer-dev{
+    height: 100px;
+    width: 100%;
+    background-color: #0f172a;
+    text-align: center;
+}
+.last-text{
+    color: #fef9f9;
+    padding-top: 15px;
+}
+
+/* Footer icons */
+#footer-icons{
+    position: relative;
+    left: 500px;
+    font-size: 30px;
+    color: #fef9f9;
+    top: -10px;
+    padding-left: 20px;
+}
